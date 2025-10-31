@@ -43,3 +43,17 @@ spring.datasource.driver-class-name=org.h2.Driver
 spring.jpa.hibernate.ddl-auto=create-drop
 
 Note: create-drop will recreate the database every time the app starts.
+
+### Endpoints
+
+- POST /users --> create a user
+- PUT /users/{displayName} --> update a user by displayName
+- GET /users/{displayName} --> get a user by displayName
+- POST /restaurants --> create a restaurant
+- GET /restaurants/{id} --> get a restaurant by id
+- GET /restaurants/search --> get and filter restaurants using query parameters
+- POST /reviews --> create a review
+- GET /reviews/user/{displayName} --> get reviews by user displayName
+- GET /reviews/{id} --> get a review by id
+- GET /admin/reviews/pending --> get reviews pending admin approval
+- POST /admin/reviews/{id} --> approve a pending review by id
